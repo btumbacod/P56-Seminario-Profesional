@@ -1,0 +1,5 @@
+var estudiante ={
+    nombre: ''
+    
+
+}
