@@ -1,5 +1,6 @@
 const model = require('./model')
 
+
 function addCarrera( objeto ) {
     const carrera = new model( objeto )
     carrera.save()

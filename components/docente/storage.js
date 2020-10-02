@@ -11,7 +11,7 @@ async function getDocente(filtroDocente) {
         filtro = { nombre: filtroDocente }
     }
     const docenteList = await module.find(filtro)
-    return DocenteList
+    return docenteList
 }
 
 async function updateDocente(idDocente, objeto) {

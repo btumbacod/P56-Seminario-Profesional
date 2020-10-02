@@ -17,4 +17,4 @@ app.use( config.publicRoute, express.static('public') )
 
 app.listen( config.port )
 
-//console.log( `La aplicación está escuchando en ${config.host}:${config.port}${config.publicRoute}` )
+console.log( `La aplicación está escuchando en ${config.host}:${config.port}${config.publicRoute}` )

@@ -8,9 +8,13 @@ const mySchema = new schema({
     },
     abreviatura: {
         type: String,
+        require: true,
     },
-    descripcion: String,
+    descripcion: {
+        type: String,
+        require: true,
+    }
 })
 
-const model = mongoose.model( 'Carrera', mySchema )
+const model = mongoose.model('Carrera', mySchema)
 module.exports = model
