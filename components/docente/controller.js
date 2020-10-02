@@ -18,15 +18,15 @@ function getDocente(filtroDocente) {
     })
 }
 
-function updateDocente(nombre, apellido, correo_electronico) {
-    return new Promise((resolve, reject) => {
+function updateDocente(idDocente, nombre, apellido, correo_electronico) {
+    return new Promise( async (resolve, reject) => {
         let docente = {
             nombre: nombre,
             apellido: apellido,
             correo_electronico: correo_electronico,
         }
-        const restult = await storage.update(idDocente, docente)
-        resolve(restult)
+        const result = await storage.update(idDocente, docente)
+        resolve(result)
     })
 }
 
